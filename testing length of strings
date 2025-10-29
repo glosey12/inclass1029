@@ -14,3 +14,5 @@ comparater<String> bylength = new comparater<String(){
 
 
 //then compare if <0, =0, or >0
+
+
