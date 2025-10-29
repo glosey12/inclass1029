@@ -1,0 +1,16 @@
+//in class binary search for length of strings
+
+public interface comparater<T>{
+  int compare(t, obj1, obj2)
+  boolean equals(object object)
+
+
+
+comparater<String> bylength = new comparater<String(){
+  public int compare(String s1, String s2)
+    return s1.length -s2.length
+  }
+  bylength.compare("cat" , "hello")
+
+
+//then compare if <0, =0, or >0
