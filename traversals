@@ -1,0 +1,53 @@
+BSTex = getiterator(T)
+(Node N: BSTex)
+
+
+//creates the appropriate iterator and returns it. Returned iterator represents a snapshot of the tree
+//enqueue and dequeue but cannot overwrite
+//returns an iterator
+public iterator<T> getiterator(BSTInterface.traversal ordertype)
+  final linkedqueue<T> infoqueue = new linkedqueue<T>();
+  if (ordertype == traversal.preorder)
+    preorder(root, queue)
+  if(ordertype == traversal.postorder)
+    postorder(root, queue)
+  if (ordertype == traversal.inorder)
+    inorder(root, queue)
+
+
+//this is our iterator 
+Return new interator{
+  public boolean hasnext(){
+    return !infoqueue.isEmpty();
+  }
+  public T next(){
+    if(!hasnext)
+      return error;
+    return infoqueue.dequeue;
+  }
+  public remove(){
+     return error
+  }
+}
+
+
+preorder(BSTNode<T>, linkedqueue Q)
+  if(node!=null)
+    Q.enqueue(node.getinfo)
+    preorder(node.getleft(),Q)
+    preorder(node.getright(),Q)
+
+
+inorder(BSTNode<T>, linkedqueue Q)
+  if(node!=null)
+    inorder(node.getleft(),Q)
+    Q.enqueue(node.getinfo)
+    inorder(node.getright(), Q)
+
+
+
+postorder(BSTNode<T>, linkedqueue Q)
+  if(node!=null)
+    postorder(node.getleft(),Q)
+    postorder(node.getright(), Q)
+    Q.enqueue(node.getinfo)
