@@ -9,3 +9,7 @@ reccontains(T target, BTSNode<T> Node){
     return true;
     
 }
+
+
+//contains then shows the node 
+//contains shows true and false
