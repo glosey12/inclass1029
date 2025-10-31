@@ -1,0 +1,19 @@
+recadd(6,root) //6>5
+recadd(6,root.getright) //6<9
+recadd(6,  .getleft) // 6<7
+recadd(6,  .getleft) //6=6   go left when equal
+recadd(6,  .getleft) 
+
+
+
+
+public BSTNode recadd(T element, BSTNode<T> node){
+  if node==null{
+    node= new BSTNode<T>(element)
+    
+  }
+  else if (comp.(element, node.getinfo) <0)
+    node.setleft(recadd(element, node.getleft())
+
+  return node
+}
