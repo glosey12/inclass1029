@@ -1,0 +1,11 @@
+reccontains(T target, BTSNode<T> Node){
+  if (node ==null)
+    return false;
+  if (comp.compare(target, node.getinfo) <0)
+    return reccontains(T, node.getleft);
+  if( comp.compare(target, node.get info) >0)
+    return reccontains(T, node.getright);
+  if (comp.compare(target, node.getinfo)==0)
+    return true;
+    
+}
