@@ -1,0 +1,19 @@
+How do we get all the nodes in order?
+
+-use inOrder to get in order
+-middle element becomes the root
+-looking at one side, we find the middle again
+-ex: 1,5,7,10,12,15,18
+    10
+  5    15
+1  7  12  18
+
+
+
+
+array[]
+Iterator iter=tree.getIter(inorder)
+int index
+while(iter,hasnext())
+  array[index]iter,next(0
+  index++
