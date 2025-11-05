@@ -1,0 +1,11 @@
+InsertTree(low,high)
+  if(low== high)
+    tree.add(low)
+  else if((low+1) == high)
+    tree.add(array[low])
+    tree.add(array[high])
+  else
+    mid=(low+high)/2
+    tree.add array[mid]
+    tree.InsertTree(low, mid-1)
+    tree.InsertTree(mid+1, high)
