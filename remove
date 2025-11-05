@@ -1,0 +1,44 @@
+public boolean remove(T target)
+  root=recRemove (Target, root)
+  return found;
+
+
+RecRemove(T target BSTNode<T> node)
+    if(node == null)
+        found= false;
+    else if (comp.compare(Target, nodeinfo<0)
+        node.setleft(RecRemove(Target node.getleft))
+    else if (target > node info)
+        node.setright(target,node.setright())
+    else //when its equal
+        RemoveNode(node)
+        found = true;
+           
+    return node
+
+
+
+private BST<T> Removenode(BSTNode<T> node)
+    T data
+    if(node.getright == null)
+        return node.getleft
+    if(node.getleft == null)
+        return node.getleft
+    else
+        data = getPredecessor(node.getleft)
+        node.setinfo(data)
+        node.setleft(RecRemove(data, node.getleft)
+        return node
+
+
+
+
+example:
+Remove(70)
+RecRemove(70,root)
+RecRemove(70, root.getright)
+RemoveNode(70)
+RecRemove(60, node.getleft)
+RemoveNode(60)
+        
+        
